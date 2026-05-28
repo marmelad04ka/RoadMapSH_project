@@ -1,0 +1,23 @@
+.projects_p {
+    display: flex;
+    max-width: 100%;
+    border-top: 2px solid black;
+}
+.projects_p ul {
+    width: 100%;
+    max-width: 100%;
+}
+
+.projects_p ul li {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    
+}
+
+.projects_p a {
+    font-size: 3vh;
+    color:black;
+    text-decoration: none;
+}

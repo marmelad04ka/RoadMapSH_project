@@ -1,0 +1,24 @@
+/*для телефонов*/
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo_text {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header a {
+
+        font-size: 2.5vh;
+    }
+}

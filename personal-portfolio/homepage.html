@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Basic HTML Website
+    </title>
+    <meta name="description" content="HTML website with several pages in pure HTML. No styles or scripts.">
+
+    <meta property="og:title" content="Basic HTML Website">
+    <meta property="og:description" content="HTML website with several pages in pure HTML. No styles or scripts.">
+    <meta property="og:image" content="images/favicon.png">
+    <meta property="og:url" content="homepage.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="stylesheet" href="src/style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="logo_text">
+            <img src="images/favicon.png" alt="logo">
+            <span>Your Name</span>
+        </div>
+
+        <nav>
+            <a href="homepage.html">Home  /</a>
+            <a href="projects.html">Project  /</a>
+            <a href="articles.html">Articles  /</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero" class="hero">
+            <h1>Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </section>
+
+        <div id="main_info" class="main_info">
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="#">HTML Only Portfolio</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Quiz App</a></li>
+                    <li><a href="#">Countdown Timer</a></li>
+                    <li><a href="#">Product Upcoming Page</a></li>
+                </ul>    
+            </section>
+
+            <section id="experience" class="experience">
+                <h2>Work Experience</h2>
+                    <article>
+                        <h3>roadmap.sh</h3>
+                        <p>Solved all the frontend projects</p>
+                        <a href="#">Visit my Profile</a>
+                    </article>
+                    <article>
+                        <h3>Open Source Work</h3>
+                        <p>Contributed to 50 open source projects. Made my own projects with 200 GitHub Stars.</p>
+                        <a href="#">Visit my GitHub Profile</a>
+                    </article>
+            </section>
+
+            <section id="education" class="education">
+                <h2>Education</h2>
+                <article>
+                    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                    <h3>Courses I took:</h3>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Web Engineering</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Human Computer Interaction</li>
+                        <li>Computer Graphics</li>
+                        <li>Database Management Systems</li>
+                        <li>Distributed Database Systems</li>
+                        <li>Discrete Mathematics</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <div >
+            <section id="reviews" class="reviews">
+                <h2>Reviews from my Teachers</h2>
+                <div class="reviews-container">
+                <article>
+                    <blockquote>
+                        <p>John Doe was a brilliant student; always stood out with his assignments</p>
+                        <footer>
+                            <cite>Jane Doe</cite><br>
+                            Assistant Professor
+                        </footer>
+                    </blockquote>
+                </article>
+                <article>
+                    <blockquote>
+                        <p>John Doe was a brilliant student; always stood out with his assignments</p>
+                        <footer>
+                            <cite>Jane Doe</cite><br>
+                            Assistant Professor
+                        </footer>
+                    </blockquote>
+                </article>
+                <article>
+                    <blockquote>
+                        <p>John Doe was a brilliant student; always stood out with his assignments</p>
+                        <footer>
+                            <cite>Jane Doe</cite><br>
+                            Assistant Professor
+                        </footer>
+                    </blockquote>
+                </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">© all rights reservered 2026</footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    align-items: center; /* вертикальное выравнивание по центру */
+    justify-content: space-between;  /* ← проще чем margin-left: auto */
+    padding: 20px 40px;      /* добавил отступы, чтобы не прилипало к краям */
+    background-color: #e2dbdb; /* опционально, чтобы видеть границы */
+}
+
+/* 3. Логотип и текст */
+
+.logo_text {
+    display: flex;
+    align-items: center; /* картинка и текст по центру друг относительно друга */
+    gap: 10px            /* расстояние между картинкой и текстом */
+}
+
+.logo_text img {
+    width: 60px;             /* задай размер картинке, иначе может быть слишком большой */
+    height: 40px;
+}
+
+.logo_text span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 4. Навигация */
+
+.header nav {
+    display: flex;
+    gap: 15px; 
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+

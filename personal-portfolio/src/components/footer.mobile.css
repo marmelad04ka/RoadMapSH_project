@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15vh;
+        padding-bottom: 5vh;
+        font-family: cursive;
+        font-size: 3vh;
+    }
+}

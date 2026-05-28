@@ -1,0 +1,207 @@
+.hero {
+    display: flex;
+    /*background-color: black;*/
+    justify-content: center; /*центрирование по горизонтали*/
+    align-items: center; /*центрирование по вертикали*/
+    flex-direction: column; /*расположение элеменетов друг под другом*/
+    gap: 15px;
+
+    padding-top: 8vh;/*50px;*/
+    padding-bottom: 8vh;
+}
+
+.hero h1 {
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.hero p {
+    font-size: 15px;
+    color: grey;
+}
+
+.main_info {
+    /*background-color: red;*/
+    display: flex; /* выстраивает дочерние элементы в ряд */
+    /*gap: 1px;     /* расстояние между элементами */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.main_info > *:not(:last-child) {
+    border-right: 2px solid black;
+    /*padding-right: 15px;  /* отступ от текста до линии */
+}
+
+.projects {
+    /*background-color: aqua;*/
+    flex: 1;
+    min-width: 0;
+    max-width:max-content
+}
+
+.projects h2 {
+    padding-left: 2vw;   /* заголовку отдельно */
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-family: cursive;
+}
+
+.projects ul {
+    list-style: none;
+    /*background-color: brown;*/
+    /*width: 100%;*/
+    font-size: 3vh;
+}
+
+.projects ul li {
+    /*background-color: blueviolet;*/
+    border-bottom: 2px solid black;
+    padding: 2vh 2vw;    /* отступы внутри li */
+    /*width: 100%;*/
+    box-sizing: border-box;
+}
+
+.projects ul li:last-child {
+    border-bottom: none;
+}
+
+.projects a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
+
+.experience {
+    flex: 1;
+    min-width: 0;
+    max-width:max-content;
+    /*background-color: red;*/
+    
+}
+
+.experience h2 {
+    padding-left: 2vw;   /* заголовку отдельно */
+    padding-top: 2vh;
+    
+    font-family: cursive;
+}
+
+.experience h3 {
+    font-family: cursive;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+.experience p {
+    padding-bottom: 1vh;
+    font-size: 3vh;
+    padding-right: 10vw;
+}
+
+.experience a {
+    color: blue;
+    text-decoration: none;
+    padding-bottom: 2vh;
+}
+
+.experience article {
+    border-bottom: 2px solid black;
+    /*background-color: aqua;*/
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+}
+
+.experience article:last-child {
+    border-bottom: none;
+}
+
+.education {
+    flex: 1;
+    min-width: 0;
+    max-width:max-content;
+}
+
+.education h2 {
+    padding-left: 2vw;   /* заголовку отдельно */
+    padding-top: 2vh;
+    font-family: cursive;
+}
+
+.education p {
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-right: 2vw;
+    font-size: 3vh;
+}
+
+.education h3 {
+    padding-left: 2vw;
+    padding-top: 2vh;
+    font-weight: normal;
+}
+
+.education ul {
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    list-style: none;
+    font-size: 2.5vh;
+}
+
+.education ul li::before {
+    content: "- ";
+}
+
+.reviews {
+    /*background-color: red;*/
+    padding-top: 3vh;
+    padding-left: 3vw;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+.reviews h2 {
+    font-family: cursive;
+    padding-bottom: 3vh;
+    /*width: 100%;*/
+}
+
+.reviews-container {
+    display: flex;
+    gap: 15px;
+}
+
+.reviews-container article {
+    border-radius: 30px;
+    border: 2px solid black;
+    /*width: 25vw;
+    height: 20vh;*/
+    flex: 1;
+    min-width: 200px;
+    max-width: 20vw;
+    height: auto;  
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews p { 
+    padding-top: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    font-size: 2.5vh;
+}
+
+.reviews footer {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 4vh;
+    color: gray;
+}
+
+.reviews cite {
+    font-style: normal;
+}
