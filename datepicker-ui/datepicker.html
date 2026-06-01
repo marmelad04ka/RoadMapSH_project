@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker UI</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="datepicker" role="group" aria-label="Date picker">
+        <div class="header-datepicker-container">
+            <div class="input-date-container">
+                <input
+                    id="date-input"
+                    type="text"
+                    placeholder="dd / mm / yyyy"
+                    aria-label="Date input field"
+                >
+            </div>
+
+            <div class="button-date-container">
+                <button
+                    type="button"
+                    aria-label="Open calendar"
+                    title="Open calendar"
+                >
+                    📅
+                </button>
+            </div>
+        </div>
+
+        <div 
+            class="body-datepicker-container"
+            role="dialog"
+            aria-label="Calendar dialog"
+            aria-modal="true"
+        >
+            <div class="select-date-container">
+                <div class="triangle-left-container">
+                    <button
+                        type="button"
+                        aria-label="Previous month"
+                        title="Previous month"
+                    >
+                        ◀
+                    </button>
+                </div>
+                <div class="date-info-container">
+                    <h2 aria-live="polite" aria-atomic="true">
+                        June 2026
+                    </h2>
+                </div>
+                <div class="triangle-right-container">
+                    <button
+                        type="button"
+                        aria-label="Next month"
+                        title="Next month"
+                    >
+                        ▶
+                    </button>
+                </div>
+            </div>
+            
+            <div class="datepicker-container">
+                <table 
+                    class="data-table"
+                    role="grid"
+                    aria-label="Calendar for June 2026"
+                >
+                    <thead>
+                        <tr role="row">
+                            <th role="columnheader" scope="col" abbr="Sunday">S</th>
+                            <th role="columnheader" scope="col" abbr="Monday">M</th>
+                            <th role="columnheader" scope="col" abbr="Tuesday">T</th>
+                            <th role="columnheader" scope="col" abbr="Wednesday">W</th>
+                            <th role="columnheader" scope="col" abbr="Thursday">T</th>
+                            <th role="columnheader" scope="col" abbr="Friday">F</th>
+                            <th role="columnheader" scope="col" abbr="Saturday">S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr role="row">
+                            <td role="gridcell"></td>
+                            <td role="gridcell"></td>
+                            <td role="gridcell"></td>
+                            <td role="gridcell"></td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="1 June 2026"
+                                    title="1 June 2026"
+                                >1</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="2 June 2026"
+                                    title="2 June 2026"
+                                >2</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="3 June 2026"
+                                    title="3 June 2026"
+                                >3</button>
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="4 June 2026"
+                                    title="4 June 2026"
+                                >4</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="5 June 2026"
+                                    title="5 June 2026"
+                                >5</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="6 June 2026"
+                                    title="6 June 2026"
+                                >6</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="7 June 2026"
+                                    title="7 June 2026"
+                                >7</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="8 June 2026"
+                                    title="8 June 2026"
+                                >8</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="9 June 2026"
+                                    title="9 June 2026"
+                                >9</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="10 June 2026"
+                                    title="10 June 2026"
+                                >10</button>
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="11 June 2026"
+                                    title="11 June 2026"
+                                >11</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="12 June 2026"
+                                    title="12 June 2026"
+                                >12</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="13 June 2026"
+                                    title="13 June 2026"
+                                >13</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="14 June 2026"
+                                    title="14 June 2026"
+                                >14</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="15 June 2026"
+                                    title="15 June 2026"
+                                >15</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="16 June 2026"
+                                    title="16 June 2026"
+                                >16</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="17 June 2026"
+                                    title="17 June 2026"
+                                >17</button>
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="18 June 2026"
+                                    title="18 June 2026"
+                                >18</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="19 June 2026"
+                                    title="19 June 2026"
+                                >19</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="20 June 2026"
+                                    title="20 June 2026"
+                                >20</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="21 June 2026"
+                                    title="21 June 2026"
+                                >21</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="22 June 2026"
+                                    title="22 June 2026"
+                                >22</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="23 June 2026"
+                                    title="23 June 2026"
+                                >23</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="24 June 2026"
+                                    title="24 June 2026"
+                                >24</button>
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="25 June 2026"
+                                    title="25 June 2026"
+                                >25</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="26 June 2026"
+                                    title="26 June 2026"
+                                >26</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="27 June 2026"
+                                    title="27 June 2026"
+                                >27</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="28 June 2026"
+                                    title="28 June 2026"
+                                >28</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="29 June 2026"
+                                    title="29 June 2026"
+                                >29</button>
+                            </td>
+                            <td role="gridcell">
+                                <button
+                                    type="button"
+                                    aria-label="30 June 2026"
+                                    title="30 June 2026"
+                                >30</button>
+                            </td>
+                            <td role="gridcell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

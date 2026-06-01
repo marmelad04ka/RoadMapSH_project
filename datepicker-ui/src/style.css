@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.datepicker {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.header-datepicker-container {
+    background-color: white;
+    display: flex;
+    height: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.input-date-container {
+    flex: 6;
+}
+
+.input-date-container input {
+    height: 100%;
+    width: 100%;
+    padding-left: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.button-date-container {
+    flex: 1;
+    border-left: 1px solid #ccc;
+}
+
+.button-date-container button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button-date-container button:hover {
+    background-color: #f0f0f0;
+}
+
+.body-datepicker-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.3rem;
+    
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.8rem;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    z-index: 1;
+}
+
+.select-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.date-info-container {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.date-info-container h2 {
+    font-size: 1.3rem;
+}
+
+.triangle-right-container,
+.triangle-left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle-right-container button,
+.triangle-left-container button {
+    background-color: transparent;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 4px;
+    color: #555;
+    transition: background-color 0.2s ease;
+}
+
+.triangle-right-container button:hover,
+.triangle-left-container button:hover {
+    background-color: #f0f0f0;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    padding: 0.4rem 0;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #888;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.data-table td {
+    text-align: center;
+    padding: 0;
+    border: 1px solid #e0e0e0;
+}
+
+.data-table button {
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.data-table button:hover {
+    background-color: #e8e8e8;
+}
