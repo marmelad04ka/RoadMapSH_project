@@ -1,0 +1,88 @@
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    max-width: 750px;
+    width: 100%;
+    font-family: system-ui, -apple-system, sans-serif;
+    gap: 1rem;
+}
+
+.img-container img {
+    width: 260px;
+    height: 260px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.main-info-container {
+    background-color: #000;
+    border-radius: 2rem;
+    padding: 1.3rem 1.5rem;
+    flex: 1;
+}
+
+.rating-container {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.people-info-container {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vh;
+}
+
+.people-name {
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.job-title {
+    color: #b0b0b0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.card-body {
+    margin-top: 1rem;
+}
+
+.main-text {
+    color: aliceblue;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 45ch;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img-container img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .main-info-container {
+        width: 90%;
+        margin-top: 1rem;
+    }
+}
