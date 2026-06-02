@@ -4,4 +4,5 @@ Personal portfolio - https://roadmap.sh/projects/portfolio-website
 Changelog component - https://roadmap.sh/projects/changelog-component  
 Testimonial cards - https://roadmap.sh/projects/testimonial-cards  
 Datepicker UI - https://roadmap.sh/projects/datepicker-ui  
-Accessible form UI - https://roadmap.sh/projects/accessible-form-ui
+Accessible form UI - https://roadmap.sh/projects/accessible-form-ui  
+Pricing Comparison Table - https://roadmap.sh/projects/pricing-comparison-table
