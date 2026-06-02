@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Accessible form UI
+    </title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="fillable-fields-container">
+            <form action="#" method="post">
+                    <div class="fullname-input-container">
+                        <label for="username" class="full-name-label">Full name</label>
+                        <input class="full-name-input"
+                            type="text" 
+                            id="username" 
+                            name="username" 
+                            placeholder="What should we call you ?"
+                            required
+                            aria-required="true">
+                    </div>
+                    
+                    <div class="email-input-container">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email"
+                            required
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            aria-required="true"
+                            aria-describedby="email-error"
+                            aria-invalid="false">
+                            <div class="error-message-container">
+                                <div class="error-message" id="email-error" role="alert">
+                                    Email is already taken
+                                </div> 
+                            </div>
+                    </div>
+
+                    <div class="password-input-container">
+                        <label for="password">Enter password</label>
+                        <input 
+                            id="password" 
+                            name="password" 
+                            placeholder="xxxxxxxx"
+                            required
+                            aria-required="true"
+                            aria-describedby="password-visibility-status">
+                        <div class="button-eye-password-container">
+                            <button
+                            type="button"
+                            aria-label="Show password"
+                            aria-pressed="false">
+                                <img src="src/image/eye.png" alt="" aria-hidden="true">
+                                <span class="sr-only">Show password</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="confirm-password-input-container">
+                        <label for="confirm-password">Confirm password</label>
+                        <input 
+                            id="confirm-password" 
+                            name="confirm-password" 
+                            placeholder="xxxxxxxx"
+                            required
+                            aria-required="true">
+                        <div class="button-eye-confirm-password-container">
+                            <button
+                            type="button"
+                            aria-label="Show password"
+                            aria-pressed="false">
+                                <img src="src/image/eye.png" alt="" aria-hidden="true">
+                                <span class="sr-only">Show password</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="update-profile-button-container">
+                        <button type="submit" class="update-profile-button">Update Profile</button>
+                    </div>
+                    
+                </form>
+        </div> 
+
+        <div class="progress-container">
+
+            <div class="percent-circle-container">
+                <div class="percent-circle">
+                     <svg width="120" height="120" viewBox="0 0 120 120">
+
+                        <circle 
+                            cx="60" cy="60" r="55" 
+                            fill="none" 
+                            stroke="#eee" 
+                            stroke-width="5"/>
+
+                        <circle 
+                            cx="60" cy="60" r="55" 
+                            fill="none" 
+                            stroke="black" 
+                            stroke-width="5"
+                            stroke-dasharray="345.6"      
+                            stroke-dashoffset="120.96"
+                            stroke-linecap="round"
+                            transform="rotate(-90 60 60)"/>>
+                        </svg>
+                    <span class="percent-label">
+                        65%
+                    </span>
+                </div>
+            </div>
+
+            <span class="text-complete-container">
+                    Profile Completeness
+            </span>
+
+            <div class="list-progression-container">
+                <div class="list-progression">
+                    <ul>
+                        <li class="complete-task">Create Account</li>
+                        <li class="complete-task">Update Roadmap Progress</li>
+                        <li class="complete-task">Setup Public Profile</li>
+                        <li>Complete youe first project</li>
+                        <li>Invite your Friends</li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
