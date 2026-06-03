@@ -5,4 +5,5 @@ Changelog component - https://roadmap.sh/projects/changelog-component
 Testimonial cards - https://roadmap.sh/projects/testimonial-cards  
 Datepicker UI - https://roadmap.sh/projects/datepicker-ui  
 Accessible form UI - https://roadmap.sh/projects/accessible-form-ui  
-Pricing Comparison Table - https://roadmap.sh/projects/pricing-comparison-table
+Pricing Comparison Table - https://roadmap.sh/projects/pricing-comparison-table  
+Blog Post Page - https://roadmap.sh/projects/blog-post-page
