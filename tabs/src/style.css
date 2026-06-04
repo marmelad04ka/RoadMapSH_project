@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.content-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 10rem 10rem;
+    width: fit-content;
+    max-width: 50rem;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+.tabs-container {
+    display: flex;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    gap:2rem;
+}
+
+.first-tab-container,
+.second-tab-container,
+.third-tab-container,
+.fourth-tab-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+    color: rgb(148, 148, 148);
+}
+
+.first-tab-container.active,
+.second-tab-container.active,
+.third-tab-container.active,
+.fourth-tab-container.active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.text-for-tab-container{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.text-center-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    border-radius: 0.8rem;
+    background-color: black;
+    color:aliceblue
+}
+
+.text-footer-container {
+    padding-bottom: 4rem;
+}
