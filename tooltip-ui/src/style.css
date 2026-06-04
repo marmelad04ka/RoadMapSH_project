@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.nav-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    max-width: auto;
+    display: flex;
+    gap:2rem;
+    width: fit-content;
+    margin: 10rem 10rem;
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    top: -4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0.7rem solid transparent;
+    border-top-color: black;
+}
