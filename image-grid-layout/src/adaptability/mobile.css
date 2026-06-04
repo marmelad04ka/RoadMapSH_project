@@ -1,0 +1,33 @@
+@media (max-width: 480px) {
+    .grid-container {
+        max-width: 100%;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .left-column-container,
+    .center-column-container,
+    .right-column-container {
+        grid-template-rows: auto;
+        max-height: none;
+    }
+
+    .left-big-image-container,
+    .center-big-image-container,
+    .right-big-image-container {
+        height: 12rem;
+    }
+
+    .left-small-image-container,
+    .center-small-image-container,
+    .right-small-image-container {
+        height: 8rem;
+    }
+
+    .right-column-container {
+        grid-template-columns: 1fr;
+    }
+}

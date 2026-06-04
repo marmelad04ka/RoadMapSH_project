@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .grid-container {
+        max-width: 30rem;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .right-column-container{
+        display: grid;
+        gap: 0.5rem;
+        min-height: 0;
+        max-height: 15rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column: 1 / -1;
+    }
+    
+}
