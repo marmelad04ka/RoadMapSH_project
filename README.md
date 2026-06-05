@@ -10,4 +10,5 @@ Blog Post Page - https://roadmap.sh/projects/blog-post-page
 Contact Form - https://roadmap.sh/projects/contact-form  
 Image Grid Layout - https://roadmap.sh/projects/image-grid  
 Tooltip UI - https://roadmap.sh/projects/tooltip-ui  
-Tabs - https://roadmap.sh/projects/simple-tabs
+Tabs - https://roadmap.sh/projects/simple-tabs  
+Cookie Consent - https://roadmap.sh/projects/cookie-consent
