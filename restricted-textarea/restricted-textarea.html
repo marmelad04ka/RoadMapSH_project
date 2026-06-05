@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Restricted TextArea
+    </title>
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="message-container">
+        <div class="label-container">
+            <label for="message">Write your Message</label>
+        </div>
+
+        <div class="textarea-container">
+            <textarea
+                name="message"
+                id="message"
+                cols="60"
+                maxlength="50"
+                minlength="1"
+                placeholder="Start typing ..."
+                required></textarea>
+            <div class="counter-container">
+                <span class="zero">0</span>/ <span class="max_length">10</span>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

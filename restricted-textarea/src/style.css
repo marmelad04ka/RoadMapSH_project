@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.message-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    width: fit-content;
+    min-height: 10rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    max-width: 30rem;
+}
+
+.label-container {
+    font-size: 1.5rem;
+}
+
+.textarea-container {
+    margin-top: 1rem;
+    height: 100%;
+    position: relative;
+}
+
+.textarea-container textarea {
+    resize: none;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color:black;
+}
+
+.counter-container {
+    position: absolute;
+    right:1rem;
+    bottom:0.8rem;
+}
+
+.textarea-container.many textarea{
+    color: red;
+    border: 2px solid red;
+}
+
+.textarea-container.many textarea:focus {
+    border: 2px solid red;
+    outline: none;
+}
+
+.textarea-container.many .counter-container{
+    color: red;
+}
+
+.textarea-container textarea,
+.counter-container {
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
