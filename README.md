@@ -12,4 +12,5 @@ Image Grid Layout - https://roadmap.sh/projects/image-grid
 Tooltip UI - https://roadmap.sh/projects/tooltip-ui  
 Tabs - https://roadmap.sh/projects/simple-tabs  
 Cookie Consent - https://roadmap.sh/projects/cookie-consent  
-Restricted Textarea - https://roadmap.sh/projects/restricted-textarea
+Restricted Textarea - https://roadmap.sh/projects/restricted-textarea  
+Accordion - https://roadmap.sh/projects/accordion
