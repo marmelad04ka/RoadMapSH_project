@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.accordion-container {
+    background-color: aliceblue;
+    font-family: system-ui, -apple-system, sans-serif;
+    min-width: 40rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-header-container {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.text-footer-container {
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.accordion-body-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button-item {
+    position: relative;
+}
+
+.button-item button {
+    width: 100%;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.7rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    border: none;
+}
+
+.text-accordion-container{
+    background-color: aliceblue;
+    padding-left: 1rem;
+    padding-top: 0.7rem;
+    padding-right: 2rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.triangle {
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    color: white;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.move {
+    transform: rotate(180deg);
+}
