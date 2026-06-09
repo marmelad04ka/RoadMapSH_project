@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Age calculator
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="age-calculator-container">
+        <div class="age-calculator-header">
+            Age Calculator
+        </div>
+        <div class="age-calculator-body">
+            <div class="enter-date-container">
+                Enter your birth date:
+            </div>
+            <div class="input-date">
+                <input
+                    id="input_date"
+                    placeholder="Enter or select date"
+                    readonly
+                    >
+                <div class="button-date-container">
+                    <button>
+                        <img src="image/calendare.png" alt="Calendare button">
+                    </button>
+                </div>
+            </div>
+            <div class="button-calculate-container">
+                <button>
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class="age-calculator-footer">
+            <div class="calculated-age">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script src="src/js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.age-calculator-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    border: 2px solid black;
+    border-radius: 1rem;
+    min-width: 20rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: whitesmoke;
+}
+
+.age-calculator-header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.age-calculator-body {
+    margin-top: 2rem;
+}
+
+.enter-date-container {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input-date {
+    position: relative;
+    min-width: 20rem;
+}
+
+.input-date input {
+    width: 100%;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+}
+
+.button-date-container {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.35rem;
+}
+
+.button-date-container button{
+    background: transparent;
+    border: none; 
+    pointer-events: none;
+    padding: 0;
+}
+
+.button-date-container img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.button-calculate-container {
+    margin-top: 0.5rem;
+}
+
+.button-calculate-container button{
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    color:aliceblue;
+    background-color: rgb(85, 87, 87);
+    border: none;
+    cursor: pointer;
+}
+
+.button-calculate-container button:hover{
+    background-color: rgb(101, 102, 102);
+}
+
+.age-calculator-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
