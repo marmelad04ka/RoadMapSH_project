@@ -14,4 +14,5 @@ Tabs - https://roadmap.sh/projects/simple-tabs
 Cookie Consent - https://roadmap.sh/projects/cookie-consent  
 Restricted Textarea - https://roadmap.sh/projects/restricted-textarea  
 Accordion - https://roadmap.sh/projects/accordion  
-Age calculator - https://roadmap.sh/projects/age-calculator
+Age calculator - https://roadmap.sh/projects/age-calculator  
+Flash Cards - https://roadmap.sh/projects/flash-cards
