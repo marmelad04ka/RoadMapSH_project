@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.pricing-cards-container {
+    display: flex;
+    gap: 1.5rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    padding-top: 1rem;
+}
+.left-card-container,
+.center-card-container,
+.right-card-container {
+    min-width: 15rem;
+    max-width: 15rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+}
+
+.left-card-container,
+.right-card-container {
+    height: 30rem;
+    align-self: center;
+}
+
+.center-card-container {
+    height: 32rem;
+    align-self: flex-start;
+    box-shadow: 0.5rem 0.5rem 1px rgba(0, 0, 0, 0.2);
+}
+
+.most-popular-container {
+    position: absolute;
+    background-color: orangered;
+    min-width: 8rem;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0;
+    padding: 0.3rem 0.8rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.tarif-plan-container {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.center-card-container .tarif-plan-container {
+    padding-top: 2.53rem;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+}
+
+.currency-container {
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.price-container {
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+}
+
+.time-container {
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+    padding-left: 0.3rem;
+}
+
+.center-card-container .price-container {
+    color: orangered;
+}
+
+.center-card-container .currency-container {
+    color: orangered;
+}
+
+.tarif-info-container {
+    display: flex;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    font-size: 0.8rem;
+}
+
+.border_bottom {
+    padding-top: 1rem;
+    position: relative;
+}
+
+.border_bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background-color: black;
+}
+
+.list-config-container {
+    padding-left: 2rem;
+    padding-top: 0.8rem;
+}
+
+.list-config-container ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "✓";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.8rem;
+}
+
+.list-config-container li {
+    padding-top: 0.8rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
+
+.center-card-container .button-container {
+    bottom: 2rem;
+}
+
+.button-container button{
+    padding: 0.7rem 6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    max-width: 10rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.button-container button:hover,
+.button-container button:focus-visible {
+    box-shadow: 0.3rem 0.3rem 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(218, 211, 211);
+    transform: scale(1.08);
+}
+
+.center-card-container .button-container button:hover,
+.center-card-container .button-container button:focus-visible {
+    background-color: rgb(253, 109, 73);
+}
+
+.center-card-container .button-container button{
+    background-color: orangered;
+    color: white;
+}
+
+.button-container button:focus-visible {
+    outline: 2px solid black;
+}
