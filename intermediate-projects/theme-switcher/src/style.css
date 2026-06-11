@@ -1,0 +1,178 @@
+:root {
+    --color-bg-card-light: #FEFEFE;
+    --color-bg-card-dark: #1D242C;
+    --color-bg-card-custom: #FEFBF4;
+
+    --color-bg-switcher-theme-light: #2E63E3;
+    --color-bg-switcher-theme-dark: #2D62E1;
+    --color-bg-switcher-theme-custom: #2D8F48;
+
+    --color-text-header-light: #0F1318;
+    --color-text-header-dark: #F6F6F7;
+    --color-text-header-custom: #1B281B;
+
+    --color-text-footer: #777e8d;
+
+    --color-bg-button-light: #2F66E3;
+    --color-bg-button-dark: #2E63E3;
+    --color-bg-button-custom: #2C8B46;
+
+    --color-text-button: #F6F6F7;
+
+    --color-text-switcher-white: white;
+    --color-text-switcher-dark: black;
+
+    --border-radius-test-card-container: 0.5rem;
+    --border-radius-theme-switcher-container: 0.3rem;
+    --border-radius-button: 0.3rem;
+
+    --font-size-text-header: 2rem;
+    --font-size-button: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.test-card-container {
+    --bg-card: var(--color-bg-card-light);
+    --bg-switcher-light: var(--color-bg-switcher-theme-light);
+    --text-switcher-light: var(--color-text-switcher-white);
+    
+    --text-header: var(--color-text-header-light);
+    --bg-button: var(--color-bg-button-light);
+    --text-footer: var(--color-text-footer);
+
+}
+
+#dark:checked ~ .test-card-container {
+    --bg-card: var(--color-bg-card-dark);
+
+    --bg-switcher-light: var(--color-bg-card-dark);
+    --bg-switcher-dark: var(--color-bg-switcher-theme-dark);
+    --bg-switcher-custom: var(--color-bg-card-dark);
+
+    --text-switcher-light: var(--color-text-switcher-white);
+    --text-switcher-dark: var(--color-text-switcher-white);
+    --text-switcher-custom: var(--color-text-switcher-white);
+
+    --text-header: var(--color-text-header-dark);
+    --bg-button: var(--color-bg-button-dark);
+    --text-footer: var(--color-text-footer);
+}
+
+#custom:checked ~ .test-card-container {
+    --bg-card: var(--color-bg-card-custom);
+
+    --bg-switcher-light: var(--color-bg-card-custom);
+    --bg-switcher-dark: var(--color-bg-card-custom);
+    --bg-switcher-custom: var(--color-bg-switcher-theme-custom);
+
+    --text-switcher-light: var(--color-text-switcher-black);
+    --text-switcher-dark: var(--color-text-switcher-black);
+    --text-switcher-custom: var(--color-text-switcher-white);
+
+    --text-header: var(--color-text-header-custom);
+    --text-footer: var(--color-text-footer);
+
+    --bg-button: var(--color-bg-button-custom);
+}
+
+
+.test-card-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    height: fit-content;
+    border-radius: var(--border-radius-test-card-container);
+    border: 2px solid black;
+    background-color: var(--bg-card);
+}
+
+input {
+    display: none;
+}
+
+.theme-name-container {
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    height: fit-content;
+    display: flex;
+    gap:0rem;
+
+    border-radius: var(--border-radius-theme-switcher-container);
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.theme-name-container label {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-top: none;
+    border-bottom: none;
+    flex: 1;
+    text-align: center;
+}
+
+.theme-name-container label:not(:last-child) {
+    border-right: 1px solid rgb(212, 212, 212);
+}
+
+.label-light {
+    background-color: var(--bg-switcher-light);
+    color: var(--text-switcher-light);
+}
+
+.label-dark {
+    background-color: var(--bg-switcher-dark);
+    color: var(--text-switcher-dark);
+}
+
+.label-custom {
+    background-color: var(--bg-switcher-custom);
+    color: var(--text-switcher-custom);
+}
+
+.text-header-container {
+    margin-left: right;
+    font-size: var(--font-size-text-header);
+    margin-top: 4rem;
+    padding-left: 1.5rem;
+    font-weight: 600;
+    color: var(--text-header);
+}
+
+.text-footer-container {
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: var(--color-text-footer);
+}
+
+.primary-button-container {
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.primary-button-container button {
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius-button);
+    border: none;
+    font-size: var(--font-size-button);
+    background-color: var(--bg-button);
+    color: var(--color-text-button);
+}
