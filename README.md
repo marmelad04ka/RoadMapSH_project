@@ -16,4 +16,5 @@ Restricted Textarea - https://roadmap.sh/projects/restricted-textarea
 Accordion - https://roadmap.sh/projects/accordion  
 Age calculator - https://roadmap.sh/projects/age-calculator  
 Flash Cards - https://roadmap.sh/projects/flash-cards  
-Pricing Cards - https://roadmap.sh/projects/pricing-cards
+Pricing Cards - https://roadmap.sh/projects/pricing-cards  
+Theme Switcher with CSS Variables - https://roadmap.sh/projects/theme-switcher
