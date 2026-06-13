@@ -18,4 +18,5 @@ Age calculator - https://roadmap.sh/projects/age-calculator
 Flash Cards - https://roadmap.sh/projects/flash-cards  
 Pricing Cards - https://roadmap.sh/projects/pricing-cards  
 Theme Switcher with CSS Variables - https://roadmap.sh/projects/theme-switcher  
-Task Tracker - https://roadmap.sh/projects/task-tracker-js
+Task Tracker - https://roadmap.sh/projects/task-tracker-js  
+Custom Dropdown - https://roadmap.sh/projects/custom-dropdown
