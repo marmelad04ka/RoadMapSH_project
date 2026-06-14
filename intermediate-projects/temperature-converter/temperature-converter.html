@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Temperature Converter
+    </title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="temperature-converter-container">
+        <div class="texts-container">
+            <div class="text-header">
+                Temperature Converter
+            </div>
+            <div class="text-body">
+                Enter the temperature, select units and submit
+            </div>
+        </div>
+
+        <div class="body-container">
+            <div class="temperature-input-container">
+                <input
+                    placeholder="0.00"
+                >
+            </div>
+
+            <div class="fromunit-dropdown-container">
+                <div class="input-dropdown-container">
+                    <input
+                        placeholder="From Unit"
+                        readonly
+                    >
+                    <div class="triangle-container">
+                        <span>⌄</span>
+                    </div>
+                </div>
+
+                <div class="choose-dropdown-container hidden">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tounit-dropdown-container">
+                <div class="input-dropdown-container">
+                    <input
+                        placeholder="To Unit"
+                        readonly
+                    >
+                    <div class="triangle-container">
+                        <span>⌄</span>
+                    </div>
+                </div>
+
+                <div class="choose-dropdown-container hidden">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="button-convert-container disabled">
+                <button>
+                    Convert
+                </button>
+            </div>
+        </div>
+
+        <div class="text-result-container">
+        </div>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
