@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.random-gh-repo-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    min-width: 20rem;
+    max-width: 20rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.black-sq-container {
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.text-header-container {
+    padding-left: 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+input {
+    border: none;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    width: 100%;
+}
+
+.dropdown-container {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.input-dropdown-container {
+    position: relative;
+    
+}
+
+.triangle-container {
+    position: absolute;
+    right: 0.5rem;
+
+    top: 20%;
+    transform: translateY(-50%) rotate(0deg);
+
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.triangle-container span {
+    font-size: 2rem;
+    display: block;
+    line-height: 1;
+}
+
+.move {
+    transform: rotate(180deg);
+    top: 40%;
+}
+
+.choose-dropdown-container {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+    top: 110%;
+}
+
+.choose-dropdown-container ul {
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.choose-dropdown-container li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+    padding-left: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.choose-dropdown-container li:last-child {
+    border-bottom: none;
+}
+
+.check-mark-container {
+    position: absolute;
+    right: 5%;
+    top:20%
+}
+
+.main-info-container {
+    padding-top: 0.5rem;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    border-radius: 0.7rem;
+}
+
+.default_state_info_container {
+    background-color: #E9ECEF;
+}
+
+.error_state_info_container {
+    background-color: #FFC9C9;
+}
+
+.content-container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.button-container {
+    padding-top: 0.5rem;
+}
+
+.button-container button{
+    width: 100%;
+    border: none;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 0.6rem;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.header-content-container {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.name-repo-container {
+    font-size: 1.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.turned-triangle-container {
+    font-size: 1.7rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.1rem;
+    rotate: 240deg;
+}
+
+.main-text-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.footer-container {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    gap:0.5rem
+}
+
+.language-container {
+    display: flex;
+    flex:1.2;
+    gap:0.3rem;
+    margin-left: auto;
+}
+
+.stars-container,
+.fork-container,
+.issue-container {
+   display: flex;
+    flex:1;
+    margin-left: auto;
+    gap:0.2rem 
+}
+
+.yellow_color {
+    color: chartreuse;
+}
+
+.blue_color {
+    color:rgb(0, 0, 255);
+}
+
+.orange_color {
+    color: orange
+}
+
+.red_color {
+    color: red;
+}
+
+.refresh_button {
+    color:white;
+    background-color: black;
+}
+
+.retry_button {
+    color:white;
+    background-color: #E03131;
+}
+
+.hidden {
+    display: none;
+}
