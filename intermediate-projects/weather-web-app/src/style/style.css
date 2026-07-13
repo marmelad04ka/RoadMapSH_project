@@ -1,0 +1,69 @@
+@import url('base/reset.css');
+@import url('base/variables.css');
+@import url('components/header/header_desctop.css');
+@import url('components/body/body_desctop.css');
+
+@import url('components/weather-web-app/weather-web-app.css');
+
+body {
+    background-color: var(--bg-main);
+    font-family: system-ui, -apple-system, sans-serif;
+    position: relative;
+    scrollbar-gutter: stable;
+}
+
+.hidden {
+    display: none;
+}
+
+.unvisibility {
+    visibility: hidden;
+}
+
+.theme-change-transition {
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+@keyframes skeleton-pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.skeleton-loading {
+    background-color: var(--bg-skeleton) !important;
+    color: transparent !important;
+    border-color: var(--bg-skeleton) !important;
+    pointer-events: none;
+    user-select: none;
+    
+    box-shadow: none !important;
+    
+    animation: skeleton-pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-loading::placeholder {
+    color: transparent !important;
+}
+
+p.skeleton-loading, 
+span.skeleton-loading{
+    display: inline-block;
+    min-width: 120px;
+    height: 1em;
+    border-radius: 4px;
+}
+
+html.js-loading body {
+    visibility: hidden;
+}
+
+html.js-ready body {
+    visibility: visible;
+}

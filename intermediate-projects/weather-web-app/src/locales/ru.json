@@ -1,0 +1,77 @@
+{
+    "notifications": {
+        "refresh_success": "Обновление успешно",
+        "data_loaded": "Данные загружены",
+        "update_passed": "Данные обновлены",
+        "error_unable_to_determine_location": "Не удалось определить местоположение",
+        "location_not_found": "Локация не найдена"
+    },
+
+    "buttons": {
+        "current_weather": "Погода сейчас",
+        "three_days_weather": "Погода на 3 дня",
+        "find_me": "Найти меня"
+    },
+
+    "inputs": {
+        "search_city": "Поиск города"
+    },
+
+    "weather_info": {
+        "temperature_three_days": "🌡️ Температура на 3 дня:",
+        "wind_speed_three_days": "💨 Скорость ветра на три дня:",
+        "precipitation_probability_three_days": "🌧️ Вероятность осадков на 3 дня:",
+        "temperature_current": "🌡️ Температура:",
+        "wind_speed_current": "💨 Скорость ветра:",
+        "pp_current": "🌧️ Вероятность осадков:",
+        "general_conditions": "Общие погодные условия:",
+        "unit_km_h": "км/ч"
+    },
+
+    "setting_menu": {
+        "setting_header": "Настройки",
+        "language_selection": "Выбор языка",
+        "theme_selection": "Выбор темы", 
+        "language": "Язык",
+        "language_ru": "Русский",
+        "language_en": "Английский",
+        "theme": "Тема",
+        "dark_theme": "Темная тема",
+        "light_theme": "Светлая тема"
+    },
+
+    "another_text": {
+        "weather_in": "Погода в"
+    },
+
+    "weather_codes": {
+        "clear_sky": "Ясное небо",
+        "mainly_clear": "Преимущественно ясно",
+        "partly_cloudy": "Переменная облачность",
+        "overcast": "Пасмурно",
+        "fog": "Туман",
+        "depositing_rime_fog": "Туман с изморозью",
+        "light_drizzle": "Слабый мелкий дождь",
+        "moderate_drizzle": "Умеренный мелкий дождь",
+        "dense_drizzle": "Сильный мелкий дождь",
+        "light_freezing_drizzle": "Слабый переохлаждённый мелкий дождь",
+        "freezing_drizzle": "Переохлаждённый мелкий дождь",
+        "slight_rain": "Слабый дождь",
+        "moderate_rain": "Умеренный дождь",
+        "heavy_rain": "Сильный дождь",
+        "light_freezing_rain": "Слабый переохлаждённый дождь",
+        "freezing_rain": "Переохлаждённый дождь",
+        "slight_snow_fall": "Слабый снегопад",
+        "moderate_snow_fall": "Умеренный снегопад",
+        "heavy_snow_fall": "Сильный снегопад",
+        "snow_grains": "Снежная крупа",
+        "slight_rain_shower": "Слабый ливневой дождь",
+        "moderate_rain_shower": "Умеренный ливневой дождь",
+        "violent_rain_shower": "Сильный ливневой дождь",
+        "slight_snow_shower": "Слабый ливневой снегопад",
+        "heavy_snow_shower": "Сильный ливневой снегопад",
+        "thunderstorm": "Гроза",
+        "thunderstorm_with_slight_hail": "Гроза с мелким градом",
+        "thunderstorm_with_heavy_hail": "Гроза с крупным градом"
+    }
+}  

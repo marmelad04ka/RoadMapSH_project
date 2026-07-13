@@ -1,0 +1,76 @@
+{
+    "notifications": {
+        "refresh_success": "Refresh successful",
+        "data_loaded": "Data loaded",
+        "error_unable_to_determine_location": "Unable to determine location",
+        "location_not_found": "Location not found"
+    },
+
+    "buttons": {
+        "current_weather": "Current weather",
+        "three_days_weather": "3 days weather",
+        "find_me": "Find me"
+    },
+
+    "inputs": {
+        "search_city": "Search city"
+    },
+
+    "weather_info": {
+        "temperature_three_days": "🌡️ Temperature for 3 days:",
+        "wind_speed_three_days": "💨 Wind speed for 3 days:",
+        "precipitation_probability_three_days": "🌧️ Precipitation probability for 3 days:",
+        "temperature_current": "🌡️ Temperature:",
+        "wind_speed_current": "💨 Wind speed:",
+        "pp_current": "🌧️ Precipitation probability:",
+        "general_conditions": "General weather conditions:",
+        "unit_km_h": "km/h"
+    },
+
+    "setting_menu": {
+        "setting_header": "Setting",
+        "language_selection": "Language selection",
+        "theme_selection": "Theme selection",
+        "language": "Language",
+        "language_ru": "Russian",
+        "language_en": "English",
+        "theme": "Theme",
+        "dark_theme": "Dark theme",
+        "light_theme": "Light theme"
+    },
+
+    "another_text": {
+        "weather_in": "Weather in"
+    },
+
+    "weather_codes": {
+        "clear_sky": "Clear sky",
+        "mainly_clear": "Mainly clear",
+        "partly_cloudy": "Partly cloudy",
+        "overcast": "Overcast",
+        "fog": "Fog",
+        "depositing_rime_fog": "Depositing rime fog",
+        "light_drizzle": "Light drizzle",
+        "moderate_drizzle": "Moderate drizzle",
+        "dense_drizzle": "Dense drizzle",
+        "light_freezing_drizzle": "Light freezing drizzle",
+        "freezing_drizzle": "Freezing drizzle",
+        "slight_rain": "Slight rain",
+        "moderate_rain": "Moderate rain",
+        "heavy_rain": "Heavy rain",
+        "light_freezing_rain": "Light freezing rain",
+        "freezing_rain": "Freezing rain",
+        "slight_snow_fall": "Slight snow fall",
+        "moderate_snow_fall": "Moderate snow fall",
+        "heavy_snow_fall": "Heavy snow fall",
+        "snow_grains": "Snow grains",
+        "slight_rain_shower": "Slight rain shower",
+        "moderate_rain_shower": "Moderate rain shower",
+        "violent_rain_shower": "Violent rain shower",
+        "slight_snow_shower": "Slight snow shower",
+        "heavy_snow_shower": "Heavy snow shower",
+        "thunderstorm": "Thunderstorm",
+        "thunderstorm_with_slight_hail": "Thunderstorm with slight hail",
+        "thunderstorm_with_heavy_hail": "Thunderstorm with heavy hail"
+    }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Weather App
+    </title>
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('theme-dark');
+        }
+
+        document.documentElement.classList.add('js-loading');
+    </script>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body class="theme-change-transition">
+    <div class="notification-container theme-change-transition hidden">
+        
+    </div>
+    <header class="theme-change-transition">
+        <div class="site-name-container theme-change-transition">
+            Weather App
+        </div>
+
+        <div class="search-wrapper">
+            <div class="input-search-container">
+                <input>
+            </div>
+
+            <div class="find-me-button-container">
+                <button class="theme-change-transition">
+                    <div class="find-me-button-text-container"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="setting-button-container">
+            <button class="setting-button">
+                ⛭
+            </button>
+
+            <div class="setting-list-container theme-change-transition unvisibility">
+                <div class="setting-selection">
+                    <p class="setting-header"></p>
+                    <p class="language-selection"></p>
+                    <p class="theme-selection"></p>
+                </div>
+
+                <div class="language-selection-list settings-panel hidden">
+                    <div class="setting-header">
+                        <p class="button-back">←</p>
+                        <p class="language-selection-list-header"></p>
+                    </div>
+                    <div class="language-ru-container">
+                        <p class="language-ru">
+                            
+                        </p>
+                        <div class="check-mark-language-ru hidden check-mark">
+                            ✓
+                        </div>
+                    </div>
+
+                    <div class="language-en-container">
+                        <p class="language-en">
+                            
+                        </p>
+                        <div class="check-mark-language-en hidden check-mark">
+                            ✓
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-selection-list settings-panel hidden">
+                    <div class="setting-header">
+                        <p class="button-back">←</p>
+                        <p class="theme-selection-list-header"></p>
+                    </div>
+                    <div class="light-theme-container">
+                        <p class="light-theme">
+                            
+                        </p>
+                        <div class="check-mark-light-theme hidden check-mark">
+                            ✓
+                        </div>
+                    </div>
+
+                    <div class="dark-theme-container">
+                        <p class="dark-theme">
+                            
+                        </p>
+                        <div class="check-mark-dark-theme hidden check-mark">
+                            ✓
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <div class="header-body-container theme-change-transition">
+        </div>
+
+        <div class="weather-container theme-change-transition ">
+            <div class="buttons-container">
+                <div class="current-weather-buttons-container">
+                    <button></button>
+                </div>
+
+                <div class="three-days-weather-buttons-container">
+                    <button></button>
+                </div>
+            </div>
+
+            <div class="current-weather-container">
+                <div class="temperature-container">
+                    <p class="temperature-text-container current-parameter-name">
+                    </p>
+                    <div class="temperature-data-container">
+                       <p class="temperature-meaning-container current-weather-info theme-change-transition">
+
+                       </p>
+
+                        <p class="temperature-unit-of-measurement-container unit-of-measurement">
+                            C
+                        </p> 
+                    </div>
+                </div>
+
+                <div class="wind-speed-container">
+                    <p class="wind-speed-text-container current-parameter-name">
+                        
+                    </p>
+                    
+                    <div class="wind-speed-data-container">
+                        <p class="wind-speed-meaning-container current-weather-info theme-change-transition">
+                            
+                        </p>
+
+                        <p class="wind-speed-unit-of-measurement-container unit-of-measurement">
+                            km/h
+                        </p>
+                    </div>
+                </div>
+
+                <div class="precipitation-probability-container ">
+                    <p class="precipitation-probability-text-container current-parameter-name">
+                        
+                    </p>
+
+                    <div class="precipitation-probability-data-container">
+                        <p class="precipitation-probability-meaning-container current-weather-info theme-change-transition">
+                            
+                        </p>
+
+                        <p class="precipitation-probability-unit-of-measurement-container unit-of-measurement">
+                            %
+                        </p>
+                    </div>
+                </div>
+
+                <div class="general-weather-conditions-container">
+                    <p class="general-weather-conditions-text-container current-parameter-name">
+                        
+                    </p>
+                    <div class="general-weather-conditions-meaning-data-container">
+                        <p class="general-weather-conditions-meaning-container current-weather-info theme-change-transition">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="three-days-weather-container hidden">
+                <div class="temperature-three-days">
+                    <div class="temperature-three-days-text-container">
+                        
+                    </div>
+                    <div class="t-data-info-container">
+                        
+                    </div>
+
+                    <div class="temperature-three-days-data-container">
+                        
+                    </div>
+
+                    <div class="t-button-scroll-right-container">
+                        <button>
+                            >
+                        </button>
+                    </div>
+
+                    <div class="t-button-scroll-left-container">
+                        <button>
+                            <
+                        </button>
+                    </div>
+                </div>
+
+                <div class="wind-three-days-container">
+                    <div class="wind-three-days-text-container">
+                        
+                    </div>
+                    <div class="w-data-info-container">
+                        
+                    </div>
+
+                    <div class="wind-speed-three-days-data-container">
+
+                    </div>
+
+                    <div class="w-button-scroll-right-container">
+                        <button>
+                            >
+                        </button>
+                    </div>
+
+                    <div class="w-button-scroll-left-container">
+                        <button>
+                            <
+                        </button>
+                    </div>
+                </div>
+
+                <div class="precipitation-probability-three-days-container">
+                    <div class="precipitation-probability-three-days-text-container">
+                        
+                    </div>
+                    <div class="p-data-info-container">
+                        
+                    </div>
+
+                    <div class="precipitation-probability-three-days-data-container">
+
+                    </div>
+
+                    <div class="p-button-scroll-right-container">
+                        <button>
+                            >
+                        </button>
+                    </div>
+
+                    <div class="p-button-scroll-left-container">
+                        <button>
+                            <
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="refresh-buttons-container">
+                <button class="theme-change-transition">
+                   ↻ 
+                </button>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="src/js/constants/dom-elements.js" defer></script>
+    <script type="module" src="src/js/script.js" defer></script>
+    
+</body>
+</html>

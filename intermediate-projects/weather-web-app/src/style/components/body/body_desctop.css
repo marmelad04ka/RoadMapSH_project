@@ -1,0 +1,416 @@
+.header-body-container {
+    background-color: var(--bg-card);
+    color: var(--text-card); 
+
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+
+    border: 1px solid var(--border-card);
+    border-radius: 0.8rem;
+
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.buttons-container {
+    display: flex;
+    margin-bottom: 0.7rem;
+    gap: 0.5rem;
+}
+
+.buttons-container button {
+    font-size: 1.5rem;
+}
+
+.buttons-container button {
+    background-color: var(--bg-toggle-btn);
+    color: var(--text-toggle-btn);
+
+    border: 1px solid var(--border-toggle-btn);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease, transform 0.15s ease; 
+}
+
+.buttons-container button:hover {
+    transform: scale(1.02);
+    color: var(--text-toggle-btn-active);
+}
+
+.buttons-container button:active {
+    background-color: var(--bg-toggle-btn-active);
+    color: var(--text-toggle-btn-active);
+    border-color: var(--border-toggle-btn-active);
+    transform: scale(1);
+}
+
+.buttons-container button.active{
+    background-color: var(--bg-toggle-btn-active);
+    color: var(--text-toggle-btn-active);
+    border-color: var(--border-toggle-btn-active);
+    font-weight: 500;
+}
+
+.refresh-buttons-container {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.5rem;
+
+    cursor: pointer;
+    display: flex;
+}
+
+.refresh-buttons-container button {
+    background-color: var(--bg-btn);
+    color: var(--text-btn);
+    font-size: 1.2rem;
+
+    padding: 0; 
+
+    width: 2.2rem;
+    height: 2.2rem;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease, transform 0.15s ease;
+}
+
+.refresh-buttons-container button:hover {
+    background-color: var(--bg-btn-hover);
+    transform: scale(1.05);
+}
+
+.refresh-buttons-container button:active {
+    transform: scale(0.95);
+}
+
+.weather-container {
+    background-color: var(--bg-card);
+
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+
+    border: 1px solid var(--border-card);
+    border-radius: 0.8rem;
+
+    position: relative;
+}
+
+.current-weather-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.temperature-container,
+.wind-speed-container,
+.precipitation-probability-container,
+.general-weather-conditions-container {
+    background-color: var(--bg-subcard);
+    color: var(--text-card);
+
+    border: 1px solid var(--border-subcard);
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 2rem;
+    max-height: 10rem;
+
+    padding: 1rem;
+
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.current-parameter-name {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 500; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em; 
+}
+
+.current-weather-info {
+    color: var(--text-card); 
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+}
+
+.unit-of-measurement {
+    color: var(--text-muted);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 500;
+    margin-left: 0.1rem;
+    user-select: none;
+}
+
+.temperature-container:hover,
+.wind-speed-container:hover,
+.precipitation-probability-container:hover,
+.general-weather-conditions-container:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-input-focus);
+}
+
+.temperature-data-container,
+.wind-speed-data-container,
+.precipitation-probability-data-container,
+.general-weather-conditions-meaning-data-container {
+    display: flex;
+    font-size: 2rem;
+    align-items: baseline;
+    gap: 0.2rem;
+}
+
+.general-weather-conditions-meaning-data-container {
+    font-size: 1.8rem;
+}
+
+.three-days-weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.temperature-three-days,
+.wind-three-days-container,
+.precipitation-probability-three-days-container {
+    background-color: var(--bg-subcard);
+    color: var(--text-card); 
+
+    border: 1px solid var(--border-subcard);
+    border-radius: 0.8rem;
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    position: relative;
+
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.temperature-three-days-text-container,
+.wind-three-days-text-container,
+.precipitation-probability-three-days-text-container {
+    color: var(--text-card);
+    font-size: 1.3rem;
+    font-weight: 600; 
+}
+
+.temperature-three-days:hover,
+.wind-three-days-container:hover,
+.precipitation-probability-three-days-container:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-input-focus);
+}
+
+.temperature-three-days-data-container,
+.wind-speed-three-days-data-container,
+.precipitation-probability-three-days-data-container {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    user-select: none;
+}
+
+.temperature-three-days-data-container::-webkit-scrollbar,
+.wind-speed-three-days-data-container ::-webkit-scrollbar,
+.precipitation-probability-three-days-data-container ::-webkit-scrollbar {
+    display: none;
+}
+
+.hour-info-container {
+    width: fit-content;
+
+    background-color: var(--bg-hour-badge);
+    color: var(--text-card); 
+    border: 1px solid var(--border-hour-badge);
+    border-radius: 0.6rem; 
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+}
+
+.day-info-container {
+    background-color: red;
+}
+
+.hour-meaning-container {
+    display: flex;
+    justify-content: center;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted)
+}
+
+.general-weather-hour-conditions-meaning-container {
+    display: flex;
+    justify-content: center;
+}
+
+.temperature-hour-info-container,
+.wind-speed-hour-info-container,
+.precipitation-probability-hour-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.15rem;
+    
+    font-size: 1.3rem; 
+    font-weight: 600;
+    color: var(--text-card);
+
+}
+
+.wind-speed-hour-info-container {
+    width: 100px;
+}
+
+.divide {
+    border-right: 2px solid var(--divide);
+}
+
+.t-button-scroll-right-container,
+.w-button-scroll-right-container,
+.p-button-scroll-right-container {
+    position: absolute;
+    right: 0.5rem;
+    top: 5rem;
+}
+
+.w-button-scroll-right-container,
+.p-button-scroll-right-container {
+    top: 4rem;
+}
+
+.t-button-scroll-left-container,
+.w-button-scroll-left-container,
+.p-button-scroll-left-container {
+    position: absolute;
+    left: 0.5rem;
+    top: 5rem;
+}
+
+.w-button-scroll-left-container,
+.p-button-scroll-left-container {
+    top: 4rem;
+}
+
+.t-button-scroll-left-container button,
+.t-button-scroll-right-container button,
+.w-button-scroll-left-container button,
+.w-button-scroll-right-container button,
+.p-button-scroll-left-container button,
+.p-button-scroll-right-container button {
+    background-color: var(--bg-card); 
+    color: var(--text-card);
+    font-size: 1.3rem;
+    
+    padding: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: 
+        background-color 0.3s ease, 
+        color 0.3s ease, 
+        border-color 0.3s ease, 
+        transform 0.15s ease, 
+        box-shadow 0.15s ease;
+}
+
+.t-button-scroll-left-container button:hover,
+.t-button-scroll-right-container button:hover,
+.w-button-scroll-left-container button:hover,
+.w-button-scroll-right-container button:hover,
+.p-button-scroll-left-container button:hover,
+.p-button-scroll-right-container button:hover {
+    background-color: var(--bg-menu-item-hover);
+    border-color: var(--border-input-focus);
+    transform: scale(1.08);
+}
+
+.t-button-scroll-left-container button:active,
+.t-button-scroll-right-container button:active,
+.w-button-scroll-left-container button:active,
+.w-button-scroll-right-container button:active,
+.p-button-scroll-left-container button:active,
+.p-button-scroll-right-container button:active {
+    transform: scale(0.95);
+}
+
+.t-data-info-container,
+.w-data-info-container,
+.p-data-info-container {
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.2rem; 
+    font-weight: 500;  
+    color: var(--text-muted);
+    user-select: none;  
+}
+
+.notification-container {
+    position: absolute;
+    border-radius: 0.7rem;
+    z-index: 9999;
+
+    left: 50%;
+    transform: translateX(-50%);
+    
+    top: 2.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.success_notification {
+    background-color: var(--bg-success);
+    border: 1px solid var(--border-success);
+    color: var(--text-success);
+}
+
+.error_notification {
+    background-color: var(--bg-error);
+    border: 1px solid var(--border-error);
+    color: var(--text-error);
+}
+
+.warning_notification {
+    background-color: var(--bg-warning);
+    border: 1px solid var(--border-warning);
+    color: var(--text-warning);
+}

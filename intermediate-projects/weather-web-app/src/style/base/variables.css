@@ -1,0 +1,133 @@
+:root {
+    --bg-main: #f0f4f8;
+    
+    /*HEADER*/
+    --bg-header: #ffffff;
+    --text-logo: #1e293b;
+    --bg-input: #f8fafc;
+    --text-input: #334155;
+    --bg-btn: #0284c7;
+    --text-btn: #ffffff;
+    --icon-gear: #64748b;
+
+    --bg-btn-hover: #0369a1;
+    --icon-gear-hover: #1e293b;
+    --border-input-focus: #0284c7;
+
+    --bg-menu: #ffffff;
+    --text-menu-main: #1e293b;
+    --bg-menu-item-hover: #f1f5f9;
+    --color-checkmark: #0284c7;
+    /*HEADER*/
+
+    /*BODY*/
+    --bg-card: rgba(255, 255, 255, 0.65);
+    --text-card: #1e293b;
+    --border-card: #cbd5e1;
+
+    --bg-toggle-btn: rgba(255, 255, 255, 0.5);
+    --text-toggle-btn: #1e293b;
+    --border-toggle-btn: #cbd5e1;
+    --bg-toggle-btn-active: rgba(2, 132, 199, 0.15);
+    --text-toggle-btn-active: #0284c7;
+    --border-toggle-btn-active: #0284c7;
+
+    --bg-card: rgba(255, 255, 255, 0.65);
+    
+    --bg-subcard: #ffffff;
+    --border-subcard: #e2e8f0;
+
+    --bg-hour-badge: #f1f5f9;
+    --border-hour-badge: #e2e8f0;
+
+    --text-muted: #64748b;
+
+    --divide: black;
+    /*BODY*/
+
+    /*NOTIFICATION*/
+    --bg-success: #bbf7d0;
+    --border-success: #22c55e;
+    --text-success: #14532d;
+
+    --bg-error: #fecaca;
+    --border-error: #ef4444;
+    --text-error: #7f1d1d;
+
+    --bg-warning: #fef08a;
+    --border-warning: #eab308;
+    --text-warning: #713f12;
+    /*NOTIFICATION*/
+
+    /*SKELETON*/
+    --bg-skeleton: #e2e8f0;
+    --bg-skeleton-shine: #f1f5f9;
+    /*SKELETON*/
+}
+
+html.theme-dark {
+    --bg-main: #0f172a;
+
+    /*HEADER*/
+    --bg-header: #1e293b;
+    --text-logo: #f8fafc;
+    --bg-input: #334155;
+    --text-input: #f1f5f9;
+    --bg-btn: #38bdf8;
+    --text-btn: #0f172a;
+    --icon-gear: #94a3b8;
+
+    --bg-btn-hover: #7dd3fc;
+    --icon-gear-hover: #f1f5f9;
+    --border-input-focus: #38bdf8;
+
+    --bg-menu: #1e293b;
+    --text-menu-main: #f8fafc;
+    --bg-menu-item-hover: #334155;
+    --color-checkmark: #38bdf8;
+    /*HEADER*/
+
+    /*BODY*/
+    --bg-card: rgba(30, 41, 59, 0.7);
+    --text-card: #f8fafc;
+    --border-card: #334155;
+
+    --bg-toggle-btn: rgba(30, 41, 59, 0.5);
+    --text-toggle-btn: #94a3b8;
+    --border-toggle-btn: #334155;
+    --bg-toggle-btn-active: rgba(56, 189, 248, 0.2);
+    --text-toggle-btn-active: #38bdf8;
+    --border-toggle-btn-active: #38bdf8;
+
+    --bg-card: rgba(30, 41, 59, 0.7);
+
+    --bg-subcard: #1e293b;
+    --border-subcard: #475569;
+
+    --bg-hour-badge: #111827;
+    --border-hour-badge: #334155;
+
+    --text-muted: #94a3b8;
+
+    --divide: white;
+    /*BODY*/
+
+    /*NOTIFICATION*/
+    --bg-success: #064e3b;
+    --border-success: #10b981;
+    --text-success: #a7f3d0;
+
+    --bg-error: #7f1d1d;
+    --border-error: #ef4444;
+    --text-error: #fca5a5;
+
+    --bg-warning: #713f12;
+    --border-warning: #eab308;
+    --text-warning: #fef08a;
+    /*NOTIFICATION*/
+
+    /*SKELETON*/
+    --bg-skeleton: #334155;
+    --bg-skeleton-shine: #475569;
+    /*SKELETON*/
+}
