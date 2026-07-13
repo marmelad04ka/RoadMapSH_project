@@ -22,3 +22,4 @@ Task Tracker - https://roadmap.sh/projects/task-tracker-js
 Custom Dropdown - https://roadmap.sh/projects/custom-dropdown  
 Temperature Converter - https://roadmap.sh/projects/temperature-converter  
 GitHub Random Repository - https://roadmap.sh/projects/github-random-repo
+Weather Web App - https://roadmap.sh/projects/weather-app  
